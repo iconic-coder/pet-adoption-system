@@ -1,8 +1,13 @@
 const SearchBar = ({ filter, onFilterChange }) => {
     return ( 
-        <div className="filter">
-            <input className=" border-2 w-3/4 mx-0" type="text" value={filter}  placeholder="Filter pets by name" onChange={(e) => onFilterChange(e.target.value)}/>
-
+        <div style={{ margin: '1rem 0' }}>
+            <input 
+                type="text" 
+                value={filter}  
+                placeholder="Search by name, breed, or age" 
+                onChange={(e) => onFilterChange(e.target.value)}
+                style={{ width: '100%', padding: '0.5rem', border: '1px solid #ccc', borderRadius: '4px' }}
+            />
         </div>
      );
 }
