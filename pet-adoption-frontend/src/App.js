@@ -4,15 +4,15 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Adopt from "./pages/Adopt/Adopt";
 import GiveUp from "./pages/GiveUp/GiveUp";
+import PetDetails from "./pages/PetDetails/PetDetails";
+import { fetchPets } from "./utils/api";
 
 const App = () => {
   const [pets, setPets] = useState([]);
   const [applications, setApplications] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3002/pets')
-      .then(res => res.json())
-      .then(data => setPets(data));
+    fetchPets().then(setPets);
   }, []);
 
   const addApplication = (newApp) => {
@@ -26,6 +26,7 @@ const App = () => {
         <Route path="/" element={<Home pets={pets} />} />
         <Route path="/adopt" element={<Adopt pets={pets} addApplication={addApplication} />} />
         <Route path="/give-up" element={<GiveUp />} />
+        <Route path="/pet/:id" element={<PetDetails pets={pets} />} />
       </Routes>
     </Router>
   );

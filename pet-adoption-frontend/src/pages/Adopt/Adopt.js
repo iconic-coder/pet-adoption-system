@@ -11,7 +11,7 @@ const Adopt = ({ pets, addApplication }) => {
         ))}
       </div>
       <div>
-        <AdoptionForm addApplication={addApplication} />
+        <AdoptionForm addApplication={addApplication} pets={pets} />
       </div>
     </div>
   );

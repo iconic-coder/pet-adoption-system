@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { submitSurrender } from '../../utils/api';
 
 const GiveUpForm = () => {
   const [form, setForm] = useState({
@@ -15,9 +16,12 @@ const GiveUpForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Give up form submitted:', form);
-    alert('Thank you for your submission. We will contact you soon.');
-    setForm({ petName: '', ownerName: '', email: '', phone: '', reason: '' });
+    submitSurrender(form)
+      .then(() => {
+        alert('Thank you for your submission. We will contact you soon.');
+        setForm({ petName: '', ownerName: '', email: '', phone: '', reason: '' });
+      })
+      .catch(() => alert('Failed to submit. Please try again.'));
   };
 
   return (
