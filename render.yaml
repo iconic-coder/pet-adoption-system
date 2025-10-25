@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pet-adoption-backend
+    env: node
+    buildCommand: cd pet-adoption-backend && npm install
+    startCommand: cd pet-adoption-backend && npm start
+    
+  - type: web
+    name: pet-adoption-frontend
+    env: static
+    buildCommand: cd pet-adoption-frontend && npm install && npm run build
+    staticPublishPath: pet-adoption-frontend/build

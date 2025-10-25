@@ -1,0 +1,9 @@
+# Frontend deployment
+[build]
+  base = "pet-adoption-frontend/"
+  publish = "build/"
+  command = "npm run build"
+
+# Backend as Netlify function (alternative)
+[functions]
+  directory = "pet-adoption-backend/"
