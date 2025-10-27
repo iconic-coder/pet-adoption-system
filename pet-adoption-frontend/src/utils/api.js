@@ -1,6 +1,5 @@
-const API_BASE = process.env.NODE_ENV === 'production' 
-  ? 'https://your-backend-url.render.com' 
-  : 'http://localhost:3002';
+const API_BASE = "https://json-server-vercel-one-sooty.vercel.app"
+  
 
 export const fetchPets = () => fetch(`${API_BASE}/pets`).then(res => res.json());
 

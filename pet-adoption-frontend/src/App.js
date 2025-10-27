@@ -19,6 +19,8 @@ const App = () => {
     setApplications([...applications, newApp]);
   };
 
+  console.log(fetchPets())
+
   return (
     <Router>
       <Navbar />
