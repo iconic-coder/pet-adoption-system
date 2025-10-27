@@ -1,0 +1,48 @@
+.pet-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.pet-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pet-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.pet-info h3 {
+  margin: 8px 0 4px 0;
+  color: #333;
+}
+
+.energy-level {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.adoption-fee {
+  font-weight: bold;
+  color: #2c5aa0;
+}
+
+.pet-tags {
+  display: flex;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.tag {
+  background: #e3f2fd;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  color: #1976d2;
+}
