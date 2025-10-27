@@ -1,77 +1,70 @@
-# Pet Adoption System
+# Getting Started with Create React App
 
-A full-stack web application for pet adoption built with React and JSON Server.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
+## Available Scripts
 
-- Browse available pets with search functionality
-- View detailed pet information
-- Submit adoption applications
-- Pet surrender form for owners
-- Responsive design
+In the project directory, you can run:
 
-## Tech Stack
+### `npm start`
 
-- **Frontend:** React, React Router
-- **Backend:** JSON Server
-- **Styling:** CSS-in-JS
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Project Structure
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-```
-pet-adoption-system/
-├── pet-adoption-backend/     # JSON Server API
-│   ├── db.json              # Database
-│   └── package.json
-├── pet-adoption-frontend/    # React App
-│   ├── src/
-│   │   ├── components/      # Reusable components
-│   │   ├── pages/          # Page components
-│   │   └── utils/          # API utilities
-│   └── package.json
-└── README.md
-```
+### `npm test`
 
-## Local Development
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Backend Setup
-```bash
-cd pet-adoption-backend
-npm install
-npm start
-```
-Server runs on http://localhost:3002
+### `npm run build`
 
-### Frontend Setup
-```bash
-cd pet-adoption-frontend
-npm install
-npm start
-```
-App runs on http://localhost:3000
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## API Endpoints
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- `GET /pets` - Get all pets
-- `POST /applications` - Submit adoption application
-- `POST /surrenders` - Submit pet surrender request
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Deployment
+### `npm run eject`
 
-- **Frontend:** Deployed on Netlify
-- **Backend:** Deployed on Render/Railway
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Usage
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1. Browse pets on the home page
-2. Use search to filter pets
-3. Click on a pet to view details
-4. Fill out adoption form to apply
-5. Use "Give Up Pet" for surrendering pets
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Contributing
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
